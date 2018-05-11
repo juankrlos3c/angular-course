@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { FirstModule } from './firstModule/firstModule.module';
 
 import { SecondModule } from './secondModule/second.module';
+import { LivecyclesComponent } from './livecycles/livecycles.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LivecyclesComponent
   ],
   imports: [
     BrowserModule,
