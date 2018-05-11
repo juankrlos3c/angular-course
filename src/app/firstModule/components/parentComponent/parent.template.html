@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="parentContent">
+    <div class="title">
+        <h1>
+            {{ title }}!, no more Hi everyone(viewChildren)<input type="checkbox" (change)="stopSayingHi($event)"/><br/>
+            {{ title }}!, no more First one(viewChild)<input type="checkbox" (change)="stopSayingHiFirstChild($event)"/>
+        </h1>
+    </div>
+    <ul>
+        <li *ngFor="let child of children">
+            <app-child-component #childComp (sayHi)="greeting($event)" [dataChild]="child"></app-child-component>
+        </li>
+    </ul>
+</div>

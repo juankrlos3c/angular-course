@@ -1,0 +1,8 @@
+.externalContent{
+    height: 200px;
+    width: 400px;
+    border: 1px solid green;
+    & .title {
+        text-align:center
+    }
+}

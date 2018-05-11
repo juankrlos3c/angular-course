@@ -1,0 +1,12 @@
+.childContent{
+    height: 100px;
+    width: 100px;
+    border: 1px solid red;
+    & .title {
+        text-align:center
+    }
+
+    &-disabledButton {
+        display: none;
+    }
+}

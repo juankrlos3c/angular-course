@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="childContent">
+    <div class="title">
+            <h4>
+                <a>{{dataChild.name}}</a>
+                </h4>
+                <span>{{dataChild.age}}</span>
+    </div>
+    <input type="button" [class.childContent-disabledButton]="parentSayStop" (click)="sayHiAction()" value="Say Hi"/>
+</div>

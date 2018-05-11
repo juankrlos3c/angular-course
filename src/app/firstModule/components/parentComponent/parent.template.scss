@@ -1,0 +1,8 @@
+.parentContent{
+    height: 600px;
+    width: 800px;
+    border: 1px solid blue;
+    & .title {
+        text-align:center
+    }
+}
