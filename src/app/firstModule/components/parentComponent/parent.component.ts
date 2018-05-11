@@ -10,6 +10,7 @@ import { ChildComponent } from '../childComponent/child.component';
 export class ParentComponent {
   @ViewChildren('childComp') componentChildren: QueryList<ChildComponent>;
   @ViewChild(ChildComponent) componentChild: ChildComponent;
+  // @ViewChild('chartTarget') chartTarget: ElementRef;
   title = 'parent';
 
   children: IDataChild[] = [{

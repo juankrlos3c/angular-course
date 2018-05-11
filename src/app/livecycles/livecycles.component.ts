@@ -27,7 +27,7 @@ export class LivecyclesComponent implements OnChanges,
   }
 
   ngOnInit() {
-    console.log('ngOnInit'); // just happens once when component starts
+    console.log('ngOnInit'); // just happens once when component complete
   }
 
   ngDoCheck () {
