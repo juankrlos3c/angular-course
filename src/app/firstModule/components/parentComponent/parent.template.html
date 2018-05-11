@@ -19,7 +19,7 @@
         <div class="parentContent-body-content-messages">
             <ul>
                 <li *ngFor="let message of messages">
-                    <strong>{{message.name | upperPipe}}:</strong>
+                    <strong>{{message.name | upperPipe:'addx'}}:</strong>
                     <span appBkgColor>{{message.text}}</span>
                 </li>
             </ul>
