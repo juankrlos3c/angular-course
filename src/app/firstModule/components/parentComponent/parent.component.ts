@@ -1,5 +1,5 @@
 import { Component, ViewChildren, ViewChild, QueryList } from '@angular/core';
-import { IDataChild } from './../models/child.model';
+import { IDataChild, IDataMessage } from './../models/child.model';
 import { ChildComponent } from '../childComponent/child.component';
 
 @Component({
@@ -23,6 +23,8 @@ export class ParentComponent {
     age: 5
   }];
 
+  messages: IDataMessage[] = [];
+
   greeting(phrase: string) {
    alert(phrase);
   }
@@ -35,5 +37,9 @@ export class ParentComponent {
 
   stopSayingHiFirstChild(event: any) {
     this.componentChild.parentSayStop = event.target.checked;
+  }
+
+  message(event: IDataMessage) {
+      this.messages.push(event);
   }
 }

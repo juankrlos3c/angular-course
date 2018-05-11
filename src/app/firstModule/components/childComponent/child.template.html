@@ -6,5 +6,6 @@
                 </h4>
                 <span>{{dataChild.age}}</span>
     </div>
-    <input type="button" [class.childContent-disabledButton]="parentSayStop" (click)="sayHiAction()" value="Say Hi"/>
+    <input type="button" [class.childContent-disabledButton]="parentSayStop" (click)="sayHiAction()" value="Say Hi"/><br/>
+    <input type="text" [(ngModel)]="textMessage"><input type="button" value="send" (click)="sendMessageToParent()">
 </div>

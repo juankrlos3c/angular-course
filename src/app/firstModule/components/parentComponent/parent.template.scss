@@ -5,4 +5,13 @@
     & .title {
         text-align:center
     }
+
+    &-body-content {
+        display: flex;
+        justify-content: space-between;
+
+        &-messages{
+            width: 400px;
+        }
+    }
 }

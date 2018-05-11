@@ -2,13 +2,27 @@
 <div class="parentContent">
     <div class="title">
         <h1>
-            {{ title }}!, no more Hi everyone(viewChildren)<input type="checkbox" (change)="stopSayingHi($event)"/><br/>
-            {{ title }}!, no more First one(viewChild)<input type="checkbox" (change)="stopSayingHiFirstChild($event)"/>
+            {{ title }}!, no more Hi everyone(viewChildren)
+            <input type="checkbox" (change)="stopSayingHi($event)" />
+            <br/> {{ title }}!, no more First one(viewChild)
+            <input type="checkbox" (change)="stopSayingHiFirstChild($event)" />
         </h1>
     </div>
-    <ul>
-        <li *ngFor="let child of children">
-            <app-child-component #childComp (sayHi)="greeting($event)" [dataChild]="child"></app-child-component>
-        </li>
-    </ul>
+    <div class="parentContent-body-content">
+        <div>
+            <ul>
+                <li *ngFor="let child of children">
+                    <app-child-component #childComp (sayHi)="greeting($event)" (sayMessage)="message($event)" [dataChild]="child"></app-child-component>
+                </li>
+            </ul>
+        </div>
+        <div class="parentContent-body-content-messages">
+            <ul>
+                <li *ngFor="let message of messages">
+                    <strong>{{message.name}}:</strong>
+                    <span>{{message.text}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
