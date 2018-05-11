@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { FirstModule } from './firstModule/firstModule.module';
 import { SecondModule } from './secondModule/second.module';
 import { Routes, RouterModule } from '@angular/router';
+import { LivecyclesComponent } from './livecycles/livecycles.component';
 import {
   ParentComponent
 } from './firstModule';
@@ -22,7 +23,8 @@ const appRoutes: Routes = [{
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LivecyclesComponent
   ],
   imports: [
     BrowserModule,
