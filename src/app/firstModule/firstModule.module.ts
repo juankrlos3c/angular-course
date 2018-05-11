@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
+import { UpperPipePipe } from './../generalComponents/pipes/upper-pipe.pipe';
+import { BkgColorDirective } from './../generalComponents/directives/bkg-color.directive';
+
 import {
     ChildComponent,
     ParentComponent
@@ -14,7 +17,9 @@ export const COMPONENTS = [
 
 @NgModule({
   declarations: [
-    ...COMPONENTS
+    ...COMPONENTS,
+    UpperPipePipe,
+    BkgColorDirective
   ],
   imports: [
     BrowserModule,
